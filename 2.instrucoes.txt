@@ -13,7 +13,7 @@ Instruções:
 
 5- Ao escolher a opção 0 o programa encerra.
 
-6- Fiz comentários ao decorrer do código. Em cada função deixei comentários explicando o que aquela função faz e o que cada variável, parâmetro, entre outros representa/contém.
+6- Fiz comentários ao decorrer do código. Em cada função(def) deixei comentários explicando o que aquela função faz e o que cada variável, parâmetro, entre outros representa/contém.
 
 
 
