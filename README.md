@@ -25,7 +25,7 @@
 
 
 
-Perguntas:
+#Perguntas:
 
 Considerando o arquivo excel enviado como sua base de dados, crie um script utilizando a linguagem Python e a biblioteca Pandas para responder as seguintes perguntas.
 
