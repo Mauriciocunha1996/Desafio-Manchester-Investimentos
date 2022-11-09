@@ -12,7 +12,7 @@ class BancoDeDados:
 
         Args:
             arquivo: recebe o arquivo que irei usar como base de dados para o código
-            self.df_sem_duplicatas: variável que remove as duplicatas da tabela e mostrar a tabela sem essas duplicatas
+            self.df_sem_duplicatas: variável que remove as duplicatas da tabela e mostra a tabela as essas duplicatas
         """
         self.dataFrame = pd.read_excel(arquivo) #lendo o arquivo excel Base_de_dados
         self.df_sem_duplicatas = self.dataFrame.drop_duplicates(subset=['codigo_cliente', 'nome_cliente', 'idade', 'filial', 'custodia'])
@@ -114,14 +114,14 @@ class BancoDeDados:
             col1 (str): este parâmetro recebe a coluna que desejo analisar
             col2 (int): este parâmetro recebe a coluna que desejo analisar
             nova_df: variável é meu data frame sem duplicatas dos acessores
-            tabela_custodia: variável armazena o data frame dos valores de cada acessor passando para moeda local
+            tabela_custodia: variável armazena o Data frame dos valores de cada acessor passando para moeda local
         Returns:
-            juncao: variável a concatenação das minhas tabelas novo_df e tabela_custodia. Onde essa data freme mostar o valor da custodia total de cada acessor
+            juncao: variável a concatenação das minhas tabelas novo_df e tabela_custodia. Onde esse Data frame mosta o valor da custodia total de cada acessor
         """
         df = self.dataFrame
         novo_df = df.groupby([col1])[col2].sum().reset_index()
-        tabela_custodia = novo_df['custodia'].apply(lambda x: f"{locale.currency(x, grouping=True)}")
-        juncao = pd.concat([novo_df[col1], tabela_custodia], axis=1)
+        tabela_custodia_assessores = novo_df['custodia'].apply(lambda x: f"{locale.currency(x, grouping=True)}")
+        juncao = pd.concat([novo_df[col1], tabela_custodia_assessores], axis=1)
         return juncao
         
     
@@ -143,7 +143,7 @@ class BancoDeDados:
     
     
     def opcoes(self):
-        """Função que armazena as opções escolhidas atráves do menu
+        """Função que executa a opção do menu escolhida pelo usuário
 
         Raises:
             ValueError: caso o valor digitado pelo usuário seja diferente das opções dadas retorna
@@ -210,7 +210,4 @@ class BancoDeDados:
                 self.linha()
                 print("Promaga Encerrado!!!")
                 self.linha()
-                break
-
-    
-    
+                break  
