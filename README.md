@@ -4,17 +4,18 @@
 
 # Instruções:
 
+
 1- A arquivo que deve ser executado é o main.py
 
 2- O arquivo funcoes.py contém a classe e as funções usadas para fazer o que foi pedido.
 
-3- Fiz uma aplicação como um menu de opções. Onde o usuário escolhe a opção desejada e o programa gera a saída procurada.
+3- Fiz uma aplicação como um menu de opções. Onde o usuário escolhe a opção desejada e o programa gera a saída procurada pelo usuário.
 
-4- Decidi fazer o código desta forma para ser algo mais abrangente, onde o usuário decide o que quer de saída e para ter uma interação com o mesmo.
+4- Decidi fazer o código desta forma para ser algo mais abrangente, onde o usuário decide o que quer de saída e também para ter uma interação entre máquina e usuário
 
 5- Ao escolher a opção 0 o programa encerra.
 
-6- Fiz comentários ao decorrer do código. Cada função deixei pequenos comentários explicando um pouco do que foi feito naquele momento.
+6- Fiz comentários ao decorrer do código. Em cada função deixei comentários explicando o que aquela função faz e o que cada variável, parâmetro, entre outros representa/contém.
 
 
 
