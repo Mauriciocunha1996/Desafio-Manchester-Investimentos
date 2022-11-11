@@ -1,4 +1,4 @@
-# Manchester Investimentos application
+# Manchester Investimentos
 
 # Esta é minha aplicação gerando as respostas para o desafio teste na Manchester Investimentos.
 
